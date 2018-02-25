@@ -1,4 +1,36 @@
-body {
+#introBody {
   text-align: center;
   background-image: url('background.png');
+  background-attachment: fixed;
+}
+
+.text {
+  height: 40vh;
+  text-align: center;
+  font-family: 'ABeeZee';
+  font-weight: lighter;
+  margin-top: 30vh;
+  margin-bottom: 30vh;
+  margin-left: 30vw;
+  margin-right: 30vw;
+  color: rgb(204, 255, 255);
+  background-color: rgba(0, 38, 77, 0.3);
+  border-radius: 25px;
+}
+
+.textParent {
+  padding: 5% 0;
+}
+
+.textChild {
+  padding: 10% 0;
+}
+
+body {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  padding: 10;
 }
