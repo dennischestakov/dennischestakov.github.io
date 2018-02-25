@@ -5,28 +5,35 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="shortcut icon" type="image/x-icon" href="icon.ico">
     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <meta charset="UTF-8">
   </head>
-  <body id="introBody">
+  <body id="bodyID">
     <!--the navigation bar-->
     <div>
-      <ul>
-        <li><a href="">Contact</a></li>
+      <ul id="navBar">
+        <li id="lastElement"><a href="">Contact</a></li>
         <li><a href="">Projects</a></li>
-        <li><a href="">Experience</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a onclick="topFunction()" title="Go To Top">Top</a></li>
       </ul>
     </div>
     <!--intro section-->
-    <header>
+    <header id="introSection">
       <div class="text" class="textParent">
         <div class="textChild">
           <h1>Welcome, my name is Dennis.</h1>
-
           <p>I am a 13 year old who is passionate about games and technology.<br /> For the past 4 years I have been coding games in so many<br /> different languages about so many different things.<br /> This is my story.</p>
         </div>
       </div>
     </header>
+    <!--experience section-->
+    <section id="experience" name="experience">
+      <h1 id="experienceHeader">My Experience</h1>
+      <p id="experienceParagraph">Some of the things I have used in my free time.</p>
+
+      <img id="experienceImg" src="experience.png" alt="Processing.js, Javascript, HTML, CSS, C#, Java, Unity">
+    </section>
     <script src="script.js"></script>
   </body>
 </html>

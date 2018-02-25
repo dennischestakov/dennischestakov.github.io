@@ -3,3 +3,17 @@ function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+$(window).scroll(function() {
+  var scroll = $(window).scrollTop(); // how many pixels you've scrolled
+  var os = $('#introSection').offset().top; // pixels to the top of introSection
+  var ht = $('#introSection').height(); // height of introSection in pixels
+
+  if(scroll > os + ht + 100){
+    $('#navBar').addClass('solid');
+  }
+
+  if(scroll < os + ht + 100){
+    $('#navBar').removeClass('solid');
+  }
+});
