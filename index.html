@@ -3,7 +3,7 @@
   <head>
     <title>Dennis Chestakov</title>
     <link rel="stylesheet" href="stylesheet.css">
-    <link rel="shortcut icon" type="image/x-icon" href="icon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="resources/icon.ico">
     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <meta charset="UTF-8">
@@ -13,8 +13,9 @@
     <div>
       <ul id="navBar">
         <li id="lastElement"><a href="">Contact</a></li>
-        <li><a href="">Projects</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#experience">Experience</a></li>
+        <li><a href="#about">About Me</a></li>
         <li><a onclick="topFunction()" title="Go To Top">Top</a></li>
       </ul>
     </div>
@@ -27,13 +28,34 @@
         </div>
       </div>
     </header>
+    <!--about me section-->
+    <section id="about" name="about">
+      <h1 id="aboutHeader">About Me</h1>
+      <p id="aboutParagraph">I'm just an ordinary teen. Like any other teen, I like playing video games,<br />running, and listening to music. Just like any other teen would.<br />But of course, I love coding!</p>
+
+      <figure class="aboutImg">
+        <img src="resources/pic1.jpg" width="221" height="393">
+        <figcaption>Me after I ran my first 5k!</figcaption>
+      </figure>
+
+      <figure class="aboutImg" style="padding-top: 4em">
+        <img src="resources/pic2.jpg" width="466" height="262">
+        <figcaption>My Cubing Collection!</figcaption>
+      </figure>
+
+      <figure class="aboutImg" style="padding-top: 4em">
+        <img src="resources/pic3.jpg" width="466" height="262">
+        <figcaption>Me and my brother at the Church of the Savior on Blood.</figcaption>
+      </figure>
+    </section>
     <!--experience section-->
     <section id="experience" name="experience">
       <h1 id="experienceHeader">My Experience</h1>
       <p id="experienceParagraph">Some of the things I have used in my free time.</p>
 
-      <img id="experienceImg" src="experience.png" alt="Processing.js, Javascript, HTML, CSS, C#, Java, Unity">
+      <img id="experienceImg" src="resources/experience.png" alt="Processing.js, Javascript, HTML, CSS, C#, Java, Unity">
     </section>
+    
     <script src="script.js"></script>
   </body>
 </html>
