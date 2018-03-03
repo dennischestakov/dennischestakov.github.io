@@ -5,8 +5,11 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="shortcut icon" type="image/x-icon" href="resources/icon.ico">
     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <meta charset="UTF-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
   </head>
   <body id="bodyID">
     <!--the navigation bar-->
@@ -21,10 +24,10 @@
     </div>
     <!--intro section-->
     <header id="introSection">
-      <div class="text" class="textParent">
+      <div class="container, text" class="textParent">
         <div class="textChild">
           <h1>Welcome, my name is Dennis.</h1>
-          <p>I am a 13 year old who is passionate about games and technology.<br /> For the past 4 years I have been coding games in so many<br /> different languages about so many different things.<br /> This is my story.</p>
+          <p>I am a 13 year old who is passionate about games and technology. For the past 4 years I have been coding games in so many different languages about so many different things. This is my story.</p>
         </div>
       </div>
     </header>
@@ -33,20 +36,26 @@
       <h1 id="aboutHeader">About Me</h1>
       <p id="aboutParagraph">I'm just an ordinary teen. Like any other teen, I like playing video games,<br />running, and listening to music. Just like any other teen would.<br />But of course, I love coding!</p>
 
-      <figure class="aboutImg">
-        <img src="resources/pic1.jpg" width="221" height="393">
-        <figcaption>Me after I ran my first 5k!</figcaption>
-      </figure>
-
-      <figure class="aboutImg" style="padding-top: 4em">
-        <img src="resources/pic2.jpg" width="466" height="262">
-        <figcaption>My Cubing Collection!</figcaption>
-      </figure>
-
-      <figure class="aboutImg" style="padding-top: 4em">
-        <img src="resources/pic3.jpg" width="466" height="262">
-        <figcaption>Me and my brother at the Church of the Savior on Blood.</figcaption>
-      </figure>
+      <div class="row">
+        <div class="col-sm-4">
+          <figure class="img-responsive">
+            <img src="resources/pic1.jpg" width="221" height="393">
+            <figcaption>Me after I ran my first 5k!</figcaption>
+          </figure>
+        </div>
+        <div class="col-sm-4">
+          <figure class="img-responsive" style="padding-top: 4em">
+            <img src="resources/pic2.jpg" width="466" height="262">
+            <figcaption>My Cubing Collection!</figcaption>
+          </figure>
+        </div>
+        <div class="col-sm-4">
+          <figure class="img-responsive" style="padding-top: 4em">
+            <img src="resources/pic3.jpg" width="466" height="262">
+            <figcaption>Me and my brother at the Church of the Savior on Blood.</figcaption>
+          </figure>
+        </div>
+      </div>
     </section>
     <!--experience section-->
     <section id="experience" name="experience">
@@ -60,22 +69,26 @@
       <h1 id="projectsHeader">My Projects</h1>
       <p id="projectsParagraph">Some of the projects and games I have worked<br />on in the past few years.</p>
 
-      <figure class="project" style="padding-top: 2em; margin-left: 0">
-        <img src="resources/trahere.png" width="400" height="225" style="padding-top: 0">
-        <figcaption>One of the very first games I ever made, Trahere.<br />It is a 2D sidescroller where the player<br />can cast spells to evade or kill enemies.<br />This is a very early picture of it.<br />It didn't go very far.</figcaption>
-      </figure>
-
-      <figure class="project" style="margin-left: 3em">
-        <a href="https://gamejolt.com/games/dislocation/298239">
-          <img src="resources/dislocation.png" width="420" height="262" style="padding-top: 0">
-        </a>
-        <figcaption>One of my first big projects, Dislocation.<br />It is a first person puzzle game where<br />you find a glove that can 'dislocate' objects.<br />When you dislocate an object,<br />you change it's size or position.<br />Click on the image to learn more!</figcaption>
-      </figure>
-
-      <figure class="project" style="padding-top: 2em; float: right; margin-left: 0">
-        <img src="resources/bonk.png" width="400" height="225" style="padding-top: 0">
-        <figcaption>My next big project, Bonk.<br />It is a 2D multiplayer game where the focus<br />is to 'bonk' other players heads without<br />bonking your own head!</figcaption>
-      </figure>
+      <div class="col-sm-4">
+        <figure class="img-responsive" style="padding-top: 2em; margin-left: 0">
+          <img src="resources/trahere.png" width="400" height="225" style="padding-top: 0">
+          <figcaption>One of the very first games I ever made, Trahere.<br />It is a 2D sidescroller where the player<br />can cast spells to evade or kill enemies.<br />This is a very early picture of it.<br />It didn't go very far.</figcaption>
+        </figure>
+      </div>
+      <div class="col-sm-4">
+        <figure class="img-responsive" style="margin-left: 3em">
+          <a href="https://gamejolt.com/games/dislocation/298239">
+            <img src="resources/dislocation.png" width="420" height="262" style="padding-top: 0">
+          </a>
+          <figcaption>One of my first big projects, Dislocation.<br />It is a first person puzzle game where<br />you find a glove that can 'dislocate' objects.<br />When you dislocate an object,<br />you change it's size or position.<br />Click on the image to learn more!</figcaption>
+        </figure>
+      </div>
+      <div class="col-sm-4">
+        <figure class="img-responsive" style="padding-top: 2em; float: right; margin-left: 0">
+          <img src="resources/bonk.png" width="400" height="225" style="padding-top: 0">
+          <figcaption>My next big project, Bonk.<br />It is a 2D multiplayer game where the focus<br />is to 'bonk' other players heads without<br />bonking your own head!</figcaption>
+        </figure>
+      </div>
     </section>
     <!--contact section-->
     <section id="contact" name="contact">

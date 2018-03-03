@@ -4,6 +4,14 @@ function topFunction() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+var supports = (function() {
+    var d = $('#navBar'),
+        c = "ontouchstart" in window || navigator.msMaxTouchPoints;
+    if (c) {
+        $('#navBar').remove();
+    }
+})();
+
 $(window).scroll(function() {
   var scroll = $(window).scrollTop(); // how many pixels you've scrolled
   var os = $('#introSection').offset().top; // pixels to the top of introSection
